@@ -4,7 +4,7 @@ import time
 app = FastAPI()
 now = time.time()
 LocalTimer = time.localtime(now)
-Curh = 2 #LocalTimer.tm_hour
+Curh = LocalTimer.tm_hour
 @app.get("/andrey")
 
 def HellWorld():
